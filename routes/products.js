@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const db = require('../config/db');
-const verifyAdmin = require('../middleware/auth');
+const db = require('better-sqlite3')('../store.db');
 
 // ------------------- مسارات عامة (للعملاء) -------------------
 
