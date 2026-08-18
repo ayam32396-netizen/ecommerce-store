@@ -5,7 +5,7 @@ require('dotenv').config();
 
 require('./config/db'); // تهيئة قاعدة البيانات وزرع البيانات الأولية
 
-const authRoutes = require('./routes/auth');
+
 const productRoutes = require('./routes/products');
 const orderRoutes = require('./routes/orders');
 const uploadRoutes = require('./routes/upload');
