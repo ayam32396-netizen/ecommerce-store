@@ -40,7 +40,7 @@ app.get('/admin/dashboard', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'admin', 'dashboard.html'));
 });
 
-app.listen(PORT, () => {
+app.listen(PORT,'0.0.0.0',() => {
   console.log(`🚀 الخادم يعمل على المنفذ ${PORT}`);
   console.log(`متجر العملاء: http://localhost:${PORT}`);
   console.log(`لوحة تحكم الأدمن: http://localhost:${PORT}/admin`);
