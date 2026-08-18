@@ -3,12 +3,7 @@ const cors = require('cors');
 const path = require('path');
 require('dotenv').config();
 
-require('./config/db'); // تهيئة قاعدة البيانات وزرع البيانات الأولية
 
-
-const productRoutes = require('./routes/products');
-const orderRoutes = require('./routes/orders');
-const uploadRoutes = require('./routes/upload');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
